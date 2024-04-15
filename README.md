@@ -1,4 +1,3 @@
-# Edtech_Application
 # StudyNotion Edtech Project
 ### StudyNotion Edtech Project Overview
 
@@ -26,6 +25,8 @@
    - Analytics and reporting tools for administrators.
 
 3. Technology Stack:
+
+
 
    a. Frontend:
    - React.js for building interactive user interfaces.
