@@ -17,7 +17,7 @@ const dotenv = require("dotenv");
 const PORT = process.env.PORT || 4000;
 
 // Loading environment variables from .env file
-dotenv.config();
+dotenv.config("mongodb+srv://studynotion:studynotion@2024@cluster0.sye7g.mongodb.net/");
 
 // Connecting to database
 database.connect();
