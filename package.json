@@ -1,7 +1,7 @@
 {
   "name": "studynotion-client",
   "description": "This is the client side of the StudyNotion App",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",

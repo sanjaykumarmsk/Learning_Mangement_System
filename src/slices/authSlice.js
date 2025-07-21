@@ -1,27 +1,40 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
+
+let token = null
+
+try {
+  const rawToken = localStorage.getItem("token")
+  if (rawToken) {
+    token = JSON.parse(rawToken)
+  }
+} catch (error) {
+  console.error("Error parsing token from localStorage:", error)
+  // Optionally, clear the corrupted token from localStorage
+  localStorage.removeItem("token")
+}
 
 const initialState = {
   signupData: null,
   loading: false,
-  token: localStorage.getItem("token") ? JSON.parse(localStorage.getItem("token")) : null,
-};
+  token: token,
+}
 
 const authSlice = createSlice({
   name: "auth",
   initialState: initialState,
   reducers: {
-    setSignupData(state, value) {
-      state.signupData = value.payload;
+    setSignupData(state, action) {
+      state.signupData = action.payload
     },
-    setLoading(state, value) {
-      state.loading = value.payload;
+    setLoading(state, action) {
+      state.loading = action.payload
     },
-    setToken(state, value) {
-      state.token = value.payload;
+    setToken(state, action) {
+      state.token = action.payload
     },
   },
-});
+})
 
-export const { setSignupData, setLoading, setToken } = authSlice.actions;
+export const { setSignupData, setLoading, setToken } = authSlice.actions
 
-export default authSlice.reducer;
+export default authSlice.reducer
