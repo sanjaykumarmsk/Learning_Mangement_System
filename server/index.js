@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 4000;
 dotenv.config();
 
 // Connecting to database
-database.connect();
+database.connect("mongodb+srv://studynotion:studynotion@2024@cluster0.sye7g.mongodb.net/");
  
 // Middlewares
 app.use(express.json());
