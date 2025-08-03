@@ -2,9 +2,6 @@ StudyNotion
 
 StudyNotion is an EdTech platform designed to provide an intuitive user-friendly experience for both students and instructors. The platform offers features such as course enrollment payment processing real-time data visualization for instructors and dashboards to track student progress. Built with a Node.js backend React.js frontend and MongoDB database StudyNotion is a scalable and feature-rich solution for online learning.
 
-🚀 Demo
-https://res.cloudinary.com/dfvs0kijp/video/upload/v1735555989/StudyNotion_so9ztx.mkv
-
 🧐 Features
 
 Here're some of the project's best features:
