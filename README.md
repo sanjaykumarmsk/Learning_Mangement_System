@@ -22,7 +22,7 @@ Responsive Design: Fully responsive application ensuring a seamless experience o
 
 1. Clone the repository:
 
-git clone https://github.com/DivyaP1063/StudyNotion.git
+git clone https://github.com/sanjaykumarmsk/StudyNotion.git
 
 2. Navigate to the project directory:
 
